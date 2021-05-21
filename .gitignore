@@ -107,8 +107,8 @@ data/*
 !/data/annotations
 
 exported-models*
-models*
-pre-trained-models*
+models/*
+pre-trained-models/*
 
 # data/train.zip
 # data/val.zip

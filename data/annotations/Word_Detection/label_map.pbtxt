@@ -1,0 +1,19 @@
+item {
+    id: 1
+    name: 'Logo'
+}
+
+item {
+    id: 3
+    name: 'Thanks'
+}
+
+item {
+    id: 4
+    name: 'Total'
+}
+
+item {
+    id: 5
+    name: 'Change'
+}
