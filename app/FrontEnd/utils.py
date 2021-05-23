@@ -9,8 +9,9 @@ from io import BytesIO
 
 @st.cache
 def make_predictions(image, model_choice):
-    model = {'WORD_DECTION_TRANSFERLEARNING': '__WD_Transfer_Learning',
-            'SHEET_DECTION_TRANSFERLEARNING' : '__SH_Transfer_Learning'}
+    model = {'WORD DETECTION': '__WD_Transfer_Learning',
+            'SHEET DETECTION' : '__SH_Transfer_Learning'}
+
     file = BytesIO()
     image.save(file, "jpeg")
     file.seek(0)
@@ -18,7 +19,7 @@ def make_predictions(image, model_choice):
                       file,
                       'multipart/form-data',
                       {'Expires': '0'})}
-    res = requests.post(f"http://localhost:8000/{model[model_choice]}",
+    res = requests.post(f"http://fastapi:80/{model[model_choice]}",
                         files=files)
     return res.json()
 

@@ -1,0 +1,22 @@
+version: '3'
+services:
+  fastapi:
+    build: BackEnd/
+    ports: 
+      - 8080:80
+    volumes:
+      - ../models:/app/models
+    container_name: fastapi
+    deploy:
+      resources:
+        reservations:
+          devices:
+          - capabilities: [gpu]
+
+  streamlit:
+    build: FrontEnd/
+    depends_on:
+      - fastapi
+    ports: 
+        - 80:80
+    container_name: streamlit

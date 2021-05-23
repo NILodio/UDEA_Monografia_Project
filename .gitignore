@@ -104,9 +104,8 @@ ENV/
 
 data/*
 !/data/annotations
-
+model_temp
 exported-models*
-models/*
 pre-trained-models/*
 
 # data/train.zip

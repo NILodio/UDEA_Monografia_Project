@@ -8,7 +8,7 @@ st.title("UDEA Project")
 
 st.markdown('## Select task prediction')
 model = st.radio("Pick the model you want to generate the predictions",
-                 ('WORD DECTION', 'SHEET DECTION'))
+                 ('WORD DETECTION', 'SHEET DETECTION'))
 
 with st.beta_expander('Plot image with annotations.',):
     img_file_buffer2 = st.file_uploader("Choose another image...", type="jpg")
