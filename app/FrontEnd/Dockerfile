@@ -26,6 +26,6 @@ RUN pip install -r requirements.txt
 
 COPY . /streamlit
 
-EXPOSE 80
+EXPOSE 5000
 
-CMD ["streamlit", "run", "app.py", "--server.port", "80"]
+CMD ["streamlit", "run", "app.py", "--server.port", "5000"]
