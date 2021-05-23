@@ -2,7 +2,7 @@ version: '3'
 services:
   fastapi:
     build: BackEnd/
-    image: ddiazva312/fastapi:latest
+    image: ddiazva312/object_detection:i1
     ports: 
       - 8080:80
     volumes:
@@ -16,7 +16,7 @@ services:
 
   streamlit:
     build: FrontEnd/
-    image: ddiazva312/streamlit:latest
+    image: ddiazva312/object_detection:i2
     depends_on:
       - fastapi
     ports: 
