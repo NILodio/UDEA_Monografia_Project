@@ -13,7 +13,7 @@
 Este repo es un guía para la ejecución demo del proyecto Identificación de etiquetas en líneas de manufactura.
 
 <p align="center">
-  <img src="Docs/project_flow.jpg">
+  <img src="Docs/project_flow.JPG">
 </p>
 
 
