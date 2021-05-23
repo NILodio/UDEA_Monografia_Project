@@ -12,13 +12,34 @@
 
 Este repo es un guía para la ejecución demo del proyecto Identificación de etiquetas en líneas de manufactura.
 
-- Detección de Hoja
-- Reorientación de Hoja
-- Detección de Palabra 
 
+
+-------------------------------------------------------------------------
+Resumen
 <p align="center">
   <img src="Docs/project_flow.JPG">
 </p>
+
+--------------------------------------------------------------------------
+
+- Detección de Hoja
+
+<p align="center">
+  <img src="Sheet_Detect.png">
+</p>
+
+- Reorientación de Hoja
+
+<p align="center">
+  <img src="perra.png">
+</p>
+
+- Detección de Palabra
+
+<p align="center">
+  <img src="Word_Detect.png">
+</p>
+
 
 ## Tabla de contenido
 
@@ -80,4 +101,6 @@ pip install -r requirements.txt
 ## Exportado de Modelos
 
 ## Docker
+
+
 
