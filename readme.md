@@ -24,22 +24,15 @@ Resumen
 
 - Detección de Hoja
 
-<p align="center">
-  <img src="Sheet_Detect.png">
-</p>
+![im_Sheet_Detec](Docs/Sheet_Detect.png)
+--------------------------------------------------------------------------
 
 - Reorientación de Hoja
-
-<p align="center">
-  <img src="perra.png">
-</p>
-
+--------------------------------------------------------------------------
 - Detección de Palabra
 
-<p align="center">
-  <img src="Word_Detect.png">
-</p>
-
+![im_Sheet_Detec](Docs/Word_Detect.png)
+--------------------------------------------------------------------------
 
 ## Tabla de contenido
 
@@ -88,6 +81,8 @@ pip install -r requirements.txt
 
 ```
 ## Experimentos (Notebooks)
+
+
 
 ## Recolección y Etiquetado de Datos
 
