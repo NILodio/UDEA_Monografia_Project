@@ -141,10 +141,14 @@ Para obtener la imagen de Docker use :
 ### Streamlit
 <div class="row">
   <div class="column">
-    <img src="Docs/Despliegue_1.jpg" alt="Word" style="width:50%">
+    <p align="center">
+      <img src="Docs/Despliegue_1.jpg" alt="Sheet" style="width:50%">
+    </p>
   </div>
   <div class="column">
-    <img src="Docs/Despliegue_3.jpg" alt="Sheet" style="width:50%">
+    <p align="center">
+      <img src="Docs/Despliegue_3.jpg" alt="Sheet" style="width:50%">
+    </p>
   </div>
 </div>
 
