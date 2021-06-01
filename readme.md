@@ -21,17 +21,20 @@ Resumen
 </p>
 
 --------------------------------------------------------------------------
-
 - Detección de Hoja
 
-![a](Docs/Sheet_Detect.png)
+<p align="center">
+  <img src="Docs/Sheet_Detect.jpg.JPG">
+</p>
 --------------------------------------------------------------------------
 
 - Reorientación de Hoja
 --------------------------------------------------------------------------
 - Detección de Palabra
 
-![b](Docs/Word_Detect.png)
+<p align="center">
+  <img src="Docs/Word_Detect.JPG">
+</p>
 --------------------------------------------------------------------------
 
 ## Tabla de contenido
