@@ -139,11 +139,13 @@ Para obtener la imagen de Docker use :
 ### Fast-Api
 
 ### Streamlit
+<div class="row">
+  <div class="column">
+    <img src="Docs/Despliegue_1.jpg" alt="Word" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="Docs/Despliegue_3.jpg" alt="Sheet" style="width:100%">
+  </div>
+</div>
 
-<p align="left">
-  <img src="Docs/Despliegue_1.jpg"width="50" height="50">
-</p>
-<p align="right">
-  <img src="Docs/Despliegue_3.jpg"width="50" height="50">
-</p>
 
