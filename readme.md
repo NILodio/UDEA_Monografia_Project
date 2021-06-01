@@ -24,14 +24,14 @@ Resumen
 
 - Detección de Hoja
 
-![im_Sheet_Detec](Docs/Sheet_Detect.png)
+![a](Docs/Sheet_Detect.png)
 --------------------------------------------------------------------------
 
 - Reorientación de Hoja
 --------------------------------------------------------------------------
 - Detección de Palabra
 
-![im_Sheet_Detec](Docs/Word_Detect.png)
+![b](Docs/Word_Detect.png)
 --------------------------------------------------------------------------
 
 ## Tabla de contenido

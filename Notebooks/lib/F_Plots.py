@@ -8,7 +8,7 @@ import numpy as np
 import pandas as pd
 import cv2
 
-def display_random_image (images, label, show_box = True ,image_path = '../data/img'):
+def display_random_image (images, label, show_box = True ,image_path = '../data/img' , string_save = "img"):
     """
         Display a random image
     """
@@ -33,6 +33,7 @@ def display_random_image (images, label, show_box = True ,image_path = '../data/
         plt.plot((xmin,xmax),(ymax,ymax),"r")
         plt.plot((xmin,xmin),(ymax,ymin),"r")
         plt.plot((xmax,xmax),(ymax,ymin),"r")
+        plt.savefig(string_save)
         plt.show()
 
         
@@ -44,7 +45,7 @@ def display_random_image (images, label, show_box = True ,image_path = '../data/
         plt.show()
 
 
-def display_random_image_Pre (Images,Images_Pre, show_box = True,image_path = '../data/img'):
+def display_random_image_Pre (Images,Images_Pre, show_box = True,image_path = '../data/img' , img_save = "img.png"):
     """
         Display a random image
     """
@@ -91,6 +92,8 @@ def display_random_image_Pre (Images,Images_Pre, show_box = True,image_path = '.
         plt.plot((xmin_p,xmax_p),(ymax_p,ymax_p),"g")
         plt.plot((xmin_p,xmin_p),(ymax_p,ymin_p),"g")
         plt.plot((xmax_p,xmax_p),(ymax_p,ymin_p),"g")
+
+        plt.savefig(img_save)
         
         plt.show()
 

@@ -20,6 +20,8 @@ with st.beta_expander('Plot image with annotations.',):
 
         # predictions = make_predictions(img_file_buffer2, 'yolo')
         predictions = make_predictions(image2, model)
+
+        
         print(predictions)
 
         df = pd.DataFrame(predictions)
@@ -35,6 +37,7 @@ with st.beta_expander('Plot image with annotations.',):
             annotated = draw_boxes(img_array2, df, add_selectbox)
             
             st.image(annotated)
+
             
             st.markdown(
                 """
