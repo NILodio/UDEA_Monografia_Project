@@ -24,7 +24,7 @@ Resumen
 - Detección de Hoja
 
 <p align="center">
-  <img src="Docs/Sheet_Detectjpg">
+  <img src="Docs/Sheet_Detect.jpg"width="100" height="100">
 </p>
 ---------------------------------------------------------------------------------
 
@@ -33,7 +33,7 @@ Resumen
 - Detección de Palabra
 
 <p align="center">
-  <img src="Docs/Word_Detect.jpg">
+  <img src="Docs/Word_Detect.jpg" width="100" height="100">
 </p>
 
 -----------------------------------------------------------------------------------
