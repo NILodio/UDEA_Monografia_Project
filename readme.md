@@ -24,18 +24,19 @@ Resumen
 - Detección de Hoja
 
 <p align="center">
-  <img src="Docs/Sheet_Detect.jpg.jpg">
+  <img src="Docs/Sheet_Detectjpg">
 </p>
---------------------------------------------------------------------------
+---------------------------------------------------------------------------------
 
 - Reorientación de Hoja
---------------------------------------------------------------------------
+---------------------------------------------------------------------------------
 - Detección de Palabra
 
 <p align="center">
   <img src="Docs/Word_Detect.jpg">
 </p>
---------------------------------------------------------------------------
+
+-----------------------------------------------------------------------------------
 
 ## Tabla de contenido
 
@@ -78,7 +79,7 @@ pip install -r requirements.txt
 
 ```
 
-## Descripcion ?
+## Descripcion.
 
 Este repositorio contiene todos los experimentos realizados para logra la implementación del demo de detección de objetos. Dejaderos unos pasos de como realizamos el entrenamiento.
 
@@ -139,4 +140,10 @@ Para obtener la imagen de Docker use :
 
 ### Streamlit
 
+<p align="left">
+  <img src="Docs/Despliegue_1.jpg">
+</p>
+<p align="right">
+  <img src="Docs/Despliegue_3.jpg">
+</p>
 
