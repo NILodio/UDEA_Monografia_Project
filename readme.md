@@ -24,7 +24,7 @@ Resumen
 - Detección de Hoja
 
 <p align="center">
-  <img src="Docs/Sheet_Detect.jpg.JPG">
+  <img src="Docs/Sheet_Detect.jpg.jpg">
 </p>
 --------------------------------------------------------------------------
 
@@ -33,21 +33,15 @@ Resumen
 - Detección de Palabra
 
 <p align="center">
-  <img src="Docs/Word_Detect.JPG">
+  <img src="Docs/Word_Detect.jpg">
 </p>
 --------------------------------------------------------------------------
 
 ## Tabla de contenido
 
 1. Requerimientos
-2. Experimentos (Notebooks)
-3. Recolección y Etiquetado de Datos
-4. Separado de Datos
-5. Generación de tf record
-6. Entrenamiento de Modelos
-7. Exportado de Modelos
-8. Prueba de modelo terminado
-9. Docker Image
+2. Steps
+3. Docker Image
 
 ## Requerimientos
 
@@ -83,22 +77,66 @@ Estos son la librerias que se usaron para realizar todo el projecto.
 pip install -r requirements.txt
 
 ```
-## Experimentos (Notebooks)
+
+## Descripcion ?
+
+Este repositorio contiene todos los experimentos realizados para logra la implementación del demo de detección de objetos. Dejaderos unos pasos de como realizamos el entrenamiento.
+
+------------------------------------------------------------------------------------
+Descargamos las imágenes que se encuentra almacenadas en Drive , tener muy encuant el tipo de Dataset Word_Detection/Sheet_detection
+
+```
+python 001_down_data.py --name_data=Word_Detection --name_path=data
+python 001_down_data.py --name_data=Sheet_detection --name_path=data
+
+```
+
+Separamos los datos en train/test
+
+```
+python 002_train_test_val.py
+
+```
+
+Como las imágenes estaba etiquetadas en formato XML hay que realizar un proceso para convertirlo en un Dataset manipulable.
+```
+python 003_xml-to-csv.py
+
+```
+
+Generamos los tf_record [info](https://ichi.pro/es/cree-un-conjunto-de-datos-tfrecords-y-utilicelo-para-entrenar-un-modelo-de-aa-239861015448620#:~:text=TFRecord%20es%20un%20formato%20de,almacenar%20im%C3%A1genes%20y%20vectores%201D.&text=(iv)%20Im%C3%A1genes.,y%20escribir%20de%20forma%20secuencial.) 
+
+```
+python 004_generate_tfrecord.py -x data/train.csv -l data/annotations/Word_Detection/label_map.pbtxt -o data/annotations/Word_Detection/train.record -i data/train
+python 004_generate_tfrecord.py -x data/test.csv -l data/annotations/Word_Detection/label_map.pbtxt -o data/annotations/Word_Detection/test.record -i data/test
+
+```
+
+Entrenamos modelo (Este enteramiento dura 4horas)
 
 
+```
+python model_main_tf2.py --model_dir=models/my_ssd_mobilenet_v2_fpnlite --pipeline_config_path=models/my_ssd_mobilenet_v2_fpnlite/pipeline.config
+```
 
-## Recolección y Etiquetado de Datos
+Exportamos modelo
+```
+python 006_export_model.py --input_type image_tensor --pipeline_config_path ./models/{namemodel}/pipeline.config --trained_checkpoint_dir ./models/{namemodel}/ --output_directory ./exported-models/prueba
 
-## Separado de Datos
+```
 
-## Generacion de tf record 
-
-
-## Entrenamiento de Modelos
-
-## Exportado de Modelos
+Evaluamos modelo
+```
+  python3 ~/tensorflow_models/object_detection/eval.py --logtostderr --pipeline_config_path=ssd_mobilenet_v1_face.config  --checkpoint_dir=model_output --eval_dir=eval
+```
 
 ## Docker
+Para obtener la imagen de Docker use : 
+```
+  docker pull ddiazva312/object_detection
+```
+### Fast-Api
 
+### Streamlit
 
 
