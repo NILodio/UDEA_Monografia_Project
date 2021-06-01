@@ -24,7 +24,7 @@ Resumen
 - Detección de Hoja
 
 <p align="center">
-  <img src="Docs/Sheet_Detect.jpg"width="50" height="50">
+  <img src="Docs/Sheet_Detect.jpg">
 </p>
 ---------------------------------------------------------------------------------
 
@@ -33,7 +33,7 @@ Resumen
 - Detección de Palabra
 
 <p align="center">
-  <img src="Docs/Word_Detect.jpg" width="50" height="50">
+  <img src="Docs/Word_Detect.jpg">
 </p>
 
 -----------------------------------------------------------------------------------
@@ -141,9 +141,9 @@ Para obtener la imagen de Docker use :
 ### Streamlit
 
 <p align="left">
-  <img src="Docs/Despliegue_1.jpg">
+  <img src="Docs/Despliegue_1.jpg"width="50" height="50">
 </p>
 <p align="right">
-  <img src="Docs/Despliegue_3.jpg">
+  <img src="Docs/Despliegue_3.jpg"width="50" height="50">
 </p>
 
