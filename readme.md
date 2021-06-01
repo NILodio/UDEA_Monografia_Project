@@ -136,9 +136,25 @@ Para obtener la imagen de Docker use :
 ```
   docker pull ddiazva312/object_detection
 ```
+<p align="center">
+  <img src="Docs/Conteiners.jpg" alt="Sheet" style="width:100%">
+</p>
+
 ### Fast-Api
+```
+http://localhost:8080/docs
+
+```
+
+<p align="center">
+  <img src="Docs/FastApi.jpg" alt="Sheet" style="width:100%">
+</p>
 
 ### Streamlit
+```
+http://localhost:5000/
+```
+
 <div class="row">
   <div class="column">
     <p align="center">
