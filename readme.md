@@ -31,6 +31,12 @@ Resumen
 
 - Reorientación de Hoja
 
+<p align="center">
+  <img src="Docs/Esquinas.jpg">
+</p>
+
+
+
 ---------------------------------------------------------------------------------
 - Detección de Palabra
 
